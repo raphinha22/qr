@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    *{
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+        letter-spacing: 3px;
+    }
+    body{
+        background: #F1f5f8;
+    }
+    .nav-center{
+        display: flex;
+        justify-content: space-around;
+        background: #fff;
+        padding: 20px 0;
+        box-shadow: 10px 5px 10px grey;
+    }
+    h4{
+        font-size: 25px;
+        color: rgb(25, 162, 162);
+    }
+    .nav-link{
+        display: flex;
+    }
+    .nav-link li{
+        list-style: none;
+        padding: 0 20px;
+    }
+    .nav-link li a{
+        text-decoration: none;
+        font-size: 20px;
+        color: black;
+    }
+    span{
+        color: rgb(25, 162, 162);
+    }
+    .btn{
+        background: transparent;
+        border-radius: 8px;
+        border: black solid 2px;
+        padding: 20px;
+        color: black;
+        font-weight: 1000;
+        cursor: pointer;;
+        position: absolute;
+        top: 60%;
+    }
+    .container {
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+
+    }
+    h2{
+        color: #fff;
+        padding: 20px;
+        background: #000;
+        border-radius: 10px;
+        position: absolute;
+        top: 50%;
+    }
+</style>
+<body>
+    <nav>
+        <div class="nav-center">
+            <h4>color flipper</h4>
+            <ul class="nav-link">
+                <li><a href="Simple_color.html">simple</a></li>
+                <li><a href="hex.html">hex</a></li>
+            </ul>
+        </div>
+    </nav>
+    <main>  
+        <div class="container">
+            <h2>Background Color : <span class="color">#F1f5f8</span></h2>
+            <button class="btn btn-hero" id="btn">Click Me</button>
+        </div>
+    </main>
+
+    <script src="Color.js"></script>
+</body>
+</html>
